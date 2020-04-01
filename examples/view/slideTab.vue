@@ -1,8 +1,8 @@
 <template>
   <div class="st_page">
-    <h3 class="st_title">滑块标签</h3>
+    <h3 class="st_title">slideTab 滑块标签</h3>
     <div class="st_content">
-      <slide-tab :length=options.length @change="chgSlideTab">
+      <slide-tab :length=options.length @change="chgSlideTab" color="green">
           <!-- 传递length是否不合理？ -->
           <template v-for="(item, idx) in options"  :slot="'slide' + idx">
               <div :key="item.id" class="weather_item">

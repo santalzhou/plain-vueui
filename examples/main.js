@@ -16,6 +16,10 @@ const router = new VueRouter({
     {
       path: '/slideTab',
       component: (resolve) => require(['./view/slideTab.vue'], resolve)
+    },
+    {
+      path: '/partLoading',
+      component: (resolve) => require(['./view/partLoading.vue'], resolve)
     }
   ]
 })

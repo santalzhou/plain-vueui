@@ -1,0 +1,13 @@
+@mixin sc($size, $color) {
+	font-size: $size;
+	color: $color;
+}
+@mixin hl($h) {
+	height: $h;
+	line-height: $h;
+}
+
+@mixin wh($w, $h) {
+	width: $w;
+	height: $h;
+}

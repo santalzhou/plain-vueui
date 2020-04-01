@@ -26,6 +26,7 @@
 import "../../static/iconfont/iconfont.css";
 import { setTimeout, clearTimeout } from "timers";
 export default {
+  name: 'SlideTab',
   data() {
     return {
       outerWidth: 0,
@@ -124,14 +125,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@mixin sc($size, $color) {
-  font-size: $size;
-  color: $color;
-}
-@mixin hl($height) {
-  height: $height;
-  line-height: $height;
-}
+@import "../../style/mixin.scss";
 .slideTab_page {
   position: relative;
   padding: 0 40px;
